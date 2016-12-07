@@ -23,7 +23,10 @@ int main() {
     library.addAvailable(lotr);
     library.addAvailable(witcher);
 
-//    std::vector<Position*> available = library.getAvailable();
-//
-//    std::cout<<available.size()<<std::endl;
+    std::vector<Position*> available = library.getAvailable();
+
+    std::cout<<available.size()<<std::endl;
+
+    std::vector<Position *> stuffToLoan = {&dogs, &lotr};
+    library.loan(stuffToLoan, customer);
 }

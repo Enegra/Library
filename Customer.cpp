@@ -26,11 +26,11 @@ void Customer::addToHistory(Position &position) {
 }
 
 void Customer::addToCurrent(Position &position) {
-    history.push_back(&position);
+    current.push_back(&position);
 }
 
 void Customer::removeFromCurrent(Position &position) {
-    current.erase(std::remove(current.begin(), current.end(), position), current.end());
+    current.erase(std::remove(current.begin(), current.end(), &position), current.end());
 }
 
 void Customer::operator+(Position &position) {
