@@ -19,3 +19,12 @@ int Book::getPageCount() {
 void Book::setPageCount(int pages) {
     pageCount = pages;
 }
+
+Book::Book(std::string name) : Position(name) {
+    this->name = name;
+}
+
+Book::Book(std::string name, int pages) {
+    this->name = name;
+    pageCount = pages;
+}

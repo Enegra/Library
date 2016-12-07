@@ -5,11 +5,19 @@
 #ifndef LIBRARY_POSITION_H
 #define LIBRARY_POSITION_H
 
+#include <iostream>
 
 class Position {
 protected:
-    std::string nazwa = "nazwa";
+    std::string name;
 public:
+    Position();
+
+    Position(std::string name);
+
+    std::string getName();
+
+    void setName(std::string newName);
 };
 
 

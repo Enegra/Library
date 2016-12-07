@@ -6,12 +6,18 @@
 #define LIBRARY_BOOK_H
 
 
-class Book {
+#include "Position.h"
+
+class Book : public Position {
 private:
     int pageCount;
 public:
     Book();
     Book(int pages);
+
+    Book(std::string name);
+
+    Book(std::string name, int pages);
     int getPageCount();
     void setPageCount(int pages);
 };

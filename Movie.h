@@ -6,12 +6,18 @@
 #define LIBRARY_MOVIE_H
 
 
-class Movie {
+#include "Position.h"
+
+class Movie : public Position {
     private:
         int movieLength;
     public:
         Movie();
+
+    Movie(std::string name);
         Movie(int length);
+
+    Movie(std::string name, int lenght);
         int getLength();
         void setLength(int length);
 };

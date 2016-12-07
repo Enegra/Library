@@ -18,3 +18,12 @@ int Movie::getLength() {
 void Movie::setLength(int length) {
     movieLength = length;
 }
+
+Movie::Movie(std::string name) : Position(name) {
+    this->name = name;
+}
+
+Movie::Movie(std::string name, int lenght) {
+    this->name = name;
+    movieLength = lenght;
+}
