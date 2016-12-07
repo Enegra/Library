@@ -14,11 +14,11 @@ class Library {
 private:
     std::vector<Position *> available;
 public:
-    void loan(std::vector<Position *> positions, Customer &customer);
+    void loan(std::vector<Position> &positions, Customer &customer);
 
-    void addAvailable(Position *position);
+    void returnPosition(Position &position, Customer &customer);
 
-    void returnPosition(Position *position);
+    std::vector<Position *> getAvailable();
 };
 
 
