@@ -7,11 +7,18 @@
 
 
 #include <vector>
+#include "Position.h"
+#include "Customer.h"
 
 class Library {
+private:
+    std::vector<Position *> available;
+public:
+    void loan(std::vector<Position *> positions, Customer *customer);
 
-    std::vector Ava
+    void addAvailable(Position *position);
 
+    void returnPosition(Position *position);
 };
 
 

@@ -7,15 +7,28 @@
 
 
 #include <vector>
+#include "Position.h"
 
 class Customer {
 private:
-    std::vector history;
-    std::vector current;
+    std::vector<Position *> history;
+    std::vector<Position *> current;
     int readCount;
     int watchedCount;
 public:
+    int getReadCount() const;
 
+    void setReadCount(int readCount);
+
+    int getWatchedCount() const;
+
+    void setWatchedCount(int watchedCount);
+
+    void addToHistory(Position *position);
+
+    void addToCurrent(Position *position);
+
+    void removeFromCurrent(Position *position);
 };
 
 
