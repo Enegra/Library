@@ -7,6 +7,7 @@
 
 #include <iostream>
 
+
 class Position {
 protected:
     std::string name;
@@ -18,6 +19,8 @@ public:
     std::string getName();
 
     void setName(std::string newName);
+
+    virtual std::string getType();
 };
 
 

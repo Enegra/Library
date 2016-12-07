@@ -20,6 +20,8 @@ public:
     Book(std::string name, int pages);
     int getPageCount();
     void setPageCount(int pages);
+
+    virtual std::string getType();
 };
 
 

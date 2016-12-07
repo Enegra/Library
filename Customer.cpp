@@ -23,6 +23,11 @@ void Customer::setWatchedCount(int watchedCount) {
 
 void Customer::addToHistory(Position &position) {
     history.push_back(&position);
+    if (position.getType()=="movie"){
+        watchedCount++;
+    } else if (position.getType()=="book"){
+        readCount++;
+    }
     // need to do something here
 }
 

@@ -20,6 +20,8 @@ class Movie : public Position {
     Movie(std::string name, int lenght);
         int getLength();
         void setLength(int length);
+
+    std::string getType();
 };
 
 

@@ -28,3 +28,7 @@ Book::Book(std::string name, int pages) {
     this->name = name;
     pageCount = pages;
 }
+
+std::string Book::getType() {
+    return "book";
+}

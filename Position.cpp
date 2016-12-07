@@ -3,6 +3,7 @@
 //
 
 #include "Position.h"
+#include "Customer.h"
 
 Position::Position() {
 }
@@ -18,3 +19,8 @@ std::string Position::getName() {
 void Position::setName(std::string newName) {
     name = newName;
 }
+
+std::string Position::getType() {
+    return "undefined";
+}
+

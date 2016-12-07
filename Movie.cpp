@@ -27,3 +27,7 @@ Movie::Movie(std::string name, int lenght) {
     this->name = name;
     movieLength = lenght;
 }
+
+std::string Movie::getType() {
+    return "movie";
+}

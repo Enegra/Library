@@ -1,8 +1,8 @@
 #include <iostream>
 #include "Movie.h"
 #include "Book.h"
-#include "Customer.h"
 #include "Library.h"
+#include "Customer.h"
 
 int main() {
     Movie birds("Angry birds", 120);
@@ -24,19 +24,18 @@ int main() {
     library.addAvailable(witcher);
 
 
-    std::cout<<"Books available in the library: " << library.getAvailable().size()<<std::endl;
+    std::cout << "Books available in the library: " << library.getAvailable().size() << std::endl;
 
     std::vector<Position *> stuffToLoan = {&dogs, &lotr};
     library.loan(stuffToLoan, customer);
 
-    std::cout<<"Books available in the library: " << library.getAvailable().size()<<std::endl;
+    std::cout << "Books available in the library: " << library.getAvailable().size() << std::endl;
 
     library.returnPosition(dogs, customer);
 
-    std::cout<<"Books available in the library: " << library.getAvailable().size()<<std::endl;
+    std::cout << "Books available in the library: " << library.getAvailable().size() << std::endl;
 
-    std::cout<<"Movies watched by the customer : " << customer.getWatchedCount()<<std::endl;
-
+    std::cout << "Movies watched by the customer : " << customer.getWatchedCount() << std::endl;
 
 
 }
