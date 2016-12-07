@@ -8,8 +8,8 @@
 
 void Library::loan(std::vector<Position*> &positions, Customer &customer) {
     for (auto &position : positions) {
-        customer + position;
-        available.erase(std::remove(available.begin(), available.end(), &position), available.end());
+        customer+*position;
+        available.erase(std::remove(available.begin(), available.end(), position), available.end());
     }
 }
 

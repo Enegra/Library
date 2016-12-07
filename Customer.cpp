@@ -23,6 +23,7 @@ void Customer::setWatchedCount(int watchedCount) {
 
 void Customer::addToHistory(Position &position) {
     history.push_back(&position);
+    // need to do something here
 }
 
 void Customer::addToCurrent(Position &position) {

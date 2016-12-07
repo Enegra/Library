@@ -23,10 +23,20 @@ int main() {
     library.addAvailable(lotr);
     library.addAvailable(witcher);
 
-    std::vector<Position*> available = library.getAvailable();
 
-    std::cout<<available.size()<<std::endl;
+    std::cout<<"Books available in the library: " << library.getAvailable().size()<<std::endl;
 
     std::vector<Position *> stuffToLoan = {&dogs, &lotr};
     library.loan(stuffToLoan, customer);
+
+    std::cout<<"Books available in the library: " << library.getAvailable().size()<<std::endl;
+
+    library.returnPosition(dogs, customer);
+
+    std::cout<<"Books available in the library: " << library.getAvailable().size()<<std::endl;
+
+    std::cout<<"Movies watched by the customer : " << customer.getWatchedCount()<<std::endl;
+
+
+
 }
