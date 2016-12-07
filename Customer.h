@@ -29,6 +29,8 @@ public:
     void addToCurrent(Position *position);
 
     void removeFromCurrent(Position *position);
+
+    void operator+(Position &position);
 };
 
 

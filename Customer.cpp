@@ -32,3 +32,7 @@ void Customer::addToCurrent(Position *position) {
 void Customer::removeFromCurrent(Position *position) {
     current.erase(std::remove(current.begin(), current.end(), &position), current.end());
 }
+
+void Customer::operator+(Position &position) {
+    addToCurrent(&position);
+}

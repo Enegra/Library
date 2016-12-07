@@ -8,9 +8,9 @@ void Library::addAvailable(Position *position) {
     available.push_back(position);
 }
 
-void Library::loan(std::vector<Position *> positions, Customer *customer) {
+void Library::loan(std::vector<Position *> positions, Customer &customer) {
     for (auto &position : positions) {
-        customer->addToCurrent(position);
+        customer + position;
     }
 }
 
