@@ -18,6 +18,7 @@ public:
 
     void returnPosition(Position &position, Customer &customer);
 
+    void addAvailable(Position &position);
     std::vector<Position *> getAvailable();
 };
 

@@ -24,3 +24,7 @@ std::vector<Position *> Library::getAvailable() {
     return available;
 }
 
+void Library::addAvailable(Position &position) {
+    available.push_back(&position);
+}
+
