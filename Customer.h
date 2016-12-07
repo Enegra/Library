@@ -16,19 +16,19 @@ private:
     int readCount;
     int watchedCount;
 public:
-    int getReadCount() const;
+    int getReadCount();
 
     void setReadCount(int readCount);
 
-    int getWatchedCount() const;
+    int getWatchedCount();
 
     void setWatchedCount(int watchedCount);
 
-    void addToHistory(Position *position);
+    void addToHistory(Position &position);
 
-    void addToCurrent(Position *position);
+    void addToCurrent(Position &position);
 
-    void removeFromCurrent(Position *position);
+    void removeFromCurrent(Position &position);
 
     void operator+(Position &position);
 };
