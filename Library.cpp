@@ -7,6 +7,10 @@
 
 
 void Library::loan(std::vector<Position*> &positions, Customer &customer) {
+    if (positions.size()>4){
+        std::cout<<"Over the limit! No positions will be loaned!"<<std::endl;
+        return;
+    }
     for (auto &position : positions) {
         customer+*position;
         available.erase(std::remove(available.begin(), available.end(), position), available.end());

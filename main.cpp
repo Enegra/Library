@@ -37,5 +37,11 @@ int main() {
 
     std::cout << "Movies watched by the customer : " << customer.getWatchedCount() << std::endl;
 
+    library.returnPosition(lotr, customer);
+
+    std::cout << "Books available in the library: " << library.getAvailable().size() << std::endl;
+
+    std::cout << "Books read by the customer : " << customer.getReadCount() << std::endl;
+
 
 }

@@ -28,7 +28,7 @@ void Customer::addToHistory(Position &position) {
     } else if (position.getType()=="book"){
         readCount++;
     }
-    // need to do something here
+    // once something goes to history, it is added to read or watched counter
 }
 
 void Customer::addToCurrent(Position &position) {
